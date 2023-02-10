@@ -1,0 +1,34 @@
+* {
+    user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+}
+body {
+   margin: 0;
+}
+#cards {
+   width: 100vw;
+   height: 100vh;
+   border-collapse: collapse;
+   padding: 0;
+   table-layout: fixed;
+}
+td {
+   box-shadow: 0 0 1px #333 inset;
+   text-align: center;
+   overflow: hidden;
+   font-size: 30pt;
+   color: #FFF;
+   background: #9D9;
+   transition: all 500ms ease-in-out, color 250ms ease-in-out, background 250ms ease-in-out;
+}
+.down {
+   transform: rotateX(180deg);
+   -webkit-transform: rotateX(180deg);
+   color: transparent;
+   background: #7D7;
+}
+.disabled {
+   background: #AEA;
+}
